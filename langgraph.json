@@ -1,0 +1,9 @@
+{
+  "dependencies": [
+    "./pyproject.toml"
+  ],
+  "graphs": {
+    "research_agent": "./research_agent/graph.py:graph"
+  },
+  "env": ".env"
+}
