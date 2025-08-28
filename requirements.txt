@@ -1,0 +1,6 @@
+langchain_anthropic
+langchain_community
+langchain_tavily
+tavily-python
+langgraph
+pydantic
