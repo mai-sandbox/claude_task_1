@@ -1,0 +1,23 @@
+{
+  "dockerfile_path": "./Dockerfile",
+  "graphs": {
+    "research_agent": "./deployment.py:agent"
+  },
+  "env": {
+    "OPENAI_API_KEY": "",
+    "TAVILY_API_KEY": "",
+    "LANGCHAIN_API_KEY": "",
+    "LANGCHAIN_TRACING_V2": "true",
+    "LANGCHAIN_PROJECT": "research-agent"
+  },
+  "python_version": "3.11",
+  "dependencies": [
+    "langgraph>=0.2.0",
+    "langchain>=0.3.0", 
+    "langchain-openai>=0.2.0",
+    "langchain-community>=0.3.0",
+    "tavily-python>=0.5.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.0.0"
+  ]
+}
