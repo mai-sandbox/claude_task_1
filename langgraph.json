@@ -1,0 +1,10 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "agent": {
+      "path": "./agent.py:app",
+      "description": "Deep Research Agent with interactive scope clarification and ReAct search capabilities"
+    }
+  },
+  "env": ".env"
+}
