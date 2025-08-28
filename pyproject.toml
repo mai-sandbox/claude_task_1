@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "langgraph-research-agent"
+version = "0.1.0"
+description = "Deep research agent with clarification and ReAct capabilities"
+authors = [{name = "Research Agent", email = "agent@example.com"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "langgraph>=0.2.0",
+    "langchain>=0.3.0",
+    "langchain-openai>=0.2.0",
+    "langchain-community>=0.3.0",
+    "tavily-python>=0.5.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.0.0"
+]
+
+[tool.setuptools.packages.find]
+include = ["agents*", "main_graph*"]
+
+[tool.setuptools.package-data]
+"*" = ["*.json", "*.md"]
